@@ -25,13 +25,18 @@ const Carosel = ({ popularMovies }) => {
 								width={1920}
 								height={1080}
 							/>
-							<div className='hidden lg:inline absolute top-0 pt-40 xl:pt-72 left-0 bg-gradient-to-t from-[#12121210] z-20 h-full w-1/2  p-10 space-y-5 text-white '>
-								<h2 className='text-3xl font-bold'>{movie.title}</h2>
-								<p className='text-lg font-mono'>{movie.overview}</p>
+							<div className=' absolute top-0 pt-48 xl:pt-64 left-0 bg-gradient-to-t from-[#12121210] z-20 h-full w-full md:w-1/2  p-10 space-y-5 text-white '>
+								<h2 className='text-xl md:text-3xl pb-6 font-bold'>
+									{movie.title}
+								</h2>
+								<p className='text-lg hidden md:inline font-mono'>
+									{movie.overview}
+								</p>
 							</div>
 						</div>
 					))}
 				</div>
+				<div className='absolute top-0 right-0 inset-0 bg-gradient-to-b from-gray-900/10 via-gray-900/30 to-gray-900/90' />
 			</div>
 		</>
 	);
