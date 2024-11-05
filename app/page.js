@@ -1,4 +1,5 @@
 
+import Carosel from "@/components/Carosel";
 import { getNowPlaying, getPopular, getTopRated, getUpComing } from "@/lib/getMovie";
 
 export default async function Home() {
@@ -8,10 +9,10 @@ export default async function Home() {
   const popularMovies = await getPopular()
 
   return (
-    <div>
-      <div>
-
-      </div>
-    </div>
+    <>
+      <main>
+        <Carosel popularMovies={popularMovies} />
+      </main>
+    </>
   );
 }
