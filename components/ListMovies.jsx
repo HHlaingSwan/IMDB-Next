@@ -11,11 +11,9 @@ const ListMovies = ({ Movies, Title }) => {
 					{Title}
 					<span className='w-32 h-1 bg-red-600 rounded-md inline-block absolute left-0  -bottom-[1.8px]' />
 				</h1>
-				<Link href={"/ViewAll"}>
-					<p className='text-xs md:text-sm text-white bg-neutral-600 px-4 py-2 rounded-sm cursor-pointer '>
-						See All
-					</p>
-				</Link>
+				<p className='text-xs md:text-sm text-white bg-neutral-600 px-4 py-2 rounded-sm cursor-pointer '>
+					See All
+				</p>
 			</div>
 			<div
 				className={cn(
