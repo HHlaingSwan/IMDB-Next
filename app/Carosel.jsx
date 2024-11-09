@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-const Carosel = ({ getMovies }) => {
+const Carosel = ({ trendingMovies }) => {
 	const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
 	return (
@@ -13,7 +13,7 @@ const Carosel = ({ getMovies }) => {
 				className='overflow-hidden cursor-pointer relative'
 				ref={emblaRef}>
 				<div className='flex'>
-					{getMovies.map((movie, index) => (
+					{trendingMovies.map((movie, index) => (
 						<div
 							className='flex-full relative min-w-0 '
 							key={index}>

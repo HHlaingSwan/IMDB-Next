@@ -3,8 +3,6 @@ import Image from "next/image";
 import React from "react";
 
 const MovieCard = ({ Movie }) => {
-	// console.log({ Movie });
-
 	return (
 		<>
 			<div className='relative flex-shrink-0 cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg '>
