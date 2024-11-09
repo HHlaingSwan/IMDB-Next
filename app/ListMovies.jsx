@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import MovieCard from "./MovieCard";
 import { cn } from "@/lib/utils";

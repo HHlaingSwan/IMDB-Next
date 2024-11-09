@@ -1,6 +1,6 @@
 
-import Carosel from "@/components/Carosel";
-import ListMovies from "@/components/ListMovies";
+import Carosel from "@/app/Carosel";
+import ListMovies from "@/app/ListMovies";
 import { getMovie, getNowPlaying, getPopular, getTopRated, getUpComing } from "@/lib/getMovie";
 
 export default async function Home() {
