@@ -1,5 +1,5 @@
 "use client";
-import { getImagePath } from "@/lib/getMovie";
+import { getImagePath } from "@/app/lib/getMovie";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";

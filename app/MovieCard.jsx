@@ -1,4 +1,4 @@
-import { getImagePath } from "@/lib/getMovie";
+import { getImagePath } from "@/app/lib/getMovie";
 import Image from "next/image";
 import React from "react";
 

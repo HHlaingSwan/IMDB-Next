@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 
 const ListMovies = ({ Movies, Title }) => {
 	return (

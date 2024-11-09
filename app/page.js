@@ -1,10 +1,10 @@
 
 import Carosel from "@/app/Carosel";
 import ListMovies from "@/app/ListMovies";
-import { getNowPlaying, getPopular, getTopRated, getTrending, getUpComing } from "@/lib/getMovie";
+import { getNowPlaying, getPopular, getTopRated, getTrending, getUpComing } from "@/app/lib/getMovie";
 
 export default async function Home() {
-  const nowPlayingMovies = await getNowPlaying()
+  // const nowPlayingMovies = await getNowPlaying()
   const upComingMovies = await getUpComing()
   const topRatedMovies = await getTopRated()
   const popularMovies = await getPopular()
