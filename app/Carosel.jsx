@@ -25,7 +25,7 @@ const Carosel = ({ trendingMovies }) => {
 							/>
 							<div className=' absolute top-0 pt-48 xl:pt-64 left-0 bg-gradient-to-t from-[#12121210] z-20 h-full w-full md:w-1/2  p-10 space-y-5 text-white '>
 								<h2 className='text-xl md:text-3xl pb-6 font-bold'>
-									{movie.title}
+									{movie.title || movie.name}
 								</h2>
 								<p className='text-lg hidden md:inline font-mono'>
 									{movie.overview}

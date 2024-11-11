@@ -17,18 +17,28 @@ const FetchData = async (url, cacheTime) => {
 	return data;
 };
 
-export const getMovie = async (id) => {
-	const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
-	const data = await FetchData(url);
-	return data;
-}
-export const getNowPlaying = async () => {
-	const url = new URL(`https://api.themoviedb.org/3/movie/now_playing`);
+// export const getMovie = async (id) => {
+// 	const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
+// 	const data = await FetchData(url);
+// 	return data;
+// }
+// export const getNowPlaying = async () => {
+// 	const url = new URL(`https://api.themoviedb.org/3/movie/now_playing`);
+// 	const data = await FetchData(url);
+// 	return data.results;
+// }
+// export const getNowPlayingSeries = async () => {
+// 	const url = new URL(`https://api.themoviedb.org/3/tv/airing_today`);
+// 	const data = await FetchData(url);
+// 	return data.results;
+// }
+export const getUpComing = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/movie/upcoming`);
 	const data = await FetchData(url);
 	return data.results;
 }
-export const getUpComing = async () => {
-	const url = new URL(`https://api.themoviedb.org/3/movie/upcoming`);
+export const getUpComingSeries = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/on_the_air`);
 	const data = await FetchData(url);
 	return data.results;
 }
@@ -38,8 +48,18 @@ export const getTopRated = async () => {
 	const data = await FetchData(url);
 	return data.results;
 }
+export const getTopRatedSeries = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/top_rated`);
+	const data = await FetchData(url);
+	return data.results;
+}
 export const getPopular = async () => {
 	const url = new URL(`https://api.themoviedb.org/3/movie/popular`);
+	const data = await FetchData(url);
+	return data.results;
+}
+export const getPopularSeries = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/popular`);
 	const data = await FetchData(url);
 	return data.results;
 }
@@ -58,6 +78,12 @@ export const getTrending = async () => {
 	const data = await FetchData(url);
 	return data.results;
 }
+export const getTrendingSeries = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/trending/tv/day`);
+	const data = await FetchData(url);
+	return data.results;
+}
+
 export const getImagePath = (path) => {
 	return `https://image.tmdb.org/t/p/original/${path}`;
 }

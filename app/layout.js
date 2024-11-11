@@ -1,6 +1,6 @@
 
-import Footer from "@/app/footer/Footer";
-import Header from "./header/Header";
+import Footer from "@/app/Footer";
+import Header from "./Header";
 import "./globals.css";
 
 
