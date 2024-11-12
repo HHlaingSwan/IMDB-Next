@@ -35,7 +35,7 @@ export default async function Home() {
         <div className="flex flex-col space-y-10 ">
           <ListMovies Movies={Popular} Title={"Popular"} />
           <ListMovies Movies={UpComing} Title={"Up Coming"} />
-          <ListMovies Movies={NowPlaying} Title={"Now Playing"} />
+          {/* <ListMovies Movies={NowPlaying} Title={"Now Playing"} /> */}
           {/* <ListMovies Movies={TopRated} Title={"Top Rated"} /> */}
         </div>
       </main>
