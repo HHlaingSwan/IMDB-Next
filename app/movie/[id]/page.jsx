@@ -34,7 +34,7 @@ const MoiveDatail = async ({ params: { id } }) => {
 								alt={datail.title || datail.name}
 								width={1920}
 								height={1080}
-								className='w-full h-60 object-cover shadow-md shadow-gray-900 drop-shadown-xl '
+								className='w-full h-60 md:h-96 object-cover shadow-md shadow-gray-900 drop-shadown-xl '
 							/>
 						</div>
 						<div className='w-full lg:w-1/2 text-white flex flex-col gap-2'>
