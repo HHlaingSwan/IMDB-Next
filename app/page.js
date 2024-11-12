@@ -5,8 +5,8 @@ import { getNowPlaying, getNowPlayingSeries, getPopular, getPopularSeries, getTo
 
 export default async function Home() {
   // Now Playing
-  const nowPlayingSeries = await getNowPlayingSeries()
-  const nowPlayingMovies = await getNowPlaying()
+  // const nowPlayingSeries = await getNowPlayingSeries()
+  // const nowPlayingMovies = await getNowPlaying()
   //Up Coming
   const upComingMovies = await getUpComing()
   const upComingSeries = await getUpComingSeries()
