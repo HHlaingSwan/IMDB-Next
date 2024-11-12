@@ -1,11 +1,20 @@
+"use client";
 import { getImagePath } from "@/app/lib/getMovie";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const MovieCard = ({ Movie }) => {
+	const router = useRouter();
+	const handleRoute = () => {
+		// Navigate to the dynamic route for the selected movie
+		router.push(`/movie/${Movie.id}`);
+	};
 	return (
 		<>
-			<div className='relative flex-shrink-0 cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg '>
+			<div
+				onClick={handleRoute}
+				className='relative flex-shrink-0 cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg '>
 				<div className='absolute top-0 right-0 inset-0 z-20 bg-gradient-to-b from-gray-900/10 via-gray-900/30 to-gray-900/40' />
 				<p className='absolute bottom-5 left-8 text-lg text-white font-bold'>
 					{Movie.title}

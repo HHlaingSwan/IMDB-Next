@@ -17,11 +17,7 @@ const FetchData = async (url, cacheTime) => {
 	return data;
 };
 
-// export const getMovie = async (id) => {
-// 	const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
-// 	const data = await FetchData(url);
-// 	return data;
-// }
+
 // export const getNowPlaying = async () => {
 // 	const url = new URL(`https://api.themoviedb.org/3/movie/now_playing`);
 // 	const data = await FetchData(url);
@@ -63,16 +59,36 @@ export const getPopularSeries = async () => {
 	const data = await FetchData(url);
 	return data.results;
 }
+export const getSeriesVideo = async (id) => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/${id}/videos`);
+	const data = await FetchData(url);
+	return data.results;
+}
 export const getMovieVideo = async (id) => {
 	const url = new URL(`https://api.themoviedb.org/3/movie/${id}/videos`);
 	const data = await FetchData(url);
 	return data.results;
+}
+export const getMovieCast = async (id) => {
+	const url = new URL(`https://api.themoviedb.org/3/movie/${id}/credits`);
+	const data = await FetchData(url);
+	return data.cast;
 }
 export const getMovieData = async (id) => {
 	const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
 	const data = await FetchData(url);
 	return data;
 }
+export const getSeriesData = async (id) => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/${id}`);
+	const data = await FetchData(url);
+	return data;
+}
+// export const getMovie = async (id) => {
+// 	const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
+// 	const data = await FetchData(url);
+// 	return data;
+// }
 export const getTrending = async () => {
 	const url = new URL(`https://api.themoviedb.org/3/trending/movie/day`);
 	const data = await FetchData(url);
