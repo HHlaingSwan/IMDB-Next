@@ -27,7 +27,7 @@ export default async function Home() {
   const Popular = [...popularMovies, ...popularSeries]
   const UpComing = [...upComingMovies, ...upComingSeries]
   // const TopRated = [...topRatedSeries, ...topRatedMovies]
-  const NowPlaying = [...nowPlayingSeries, ...nowPlayingMovies]
+  // const NowPlaying = [...nowPlayingSeries, ...nowPlayingMovies]
   return (
     <>
       <main>
