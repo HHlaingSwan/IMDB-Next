@@ -12,8 +12,8 @@ export default async function Home() {
   const upComingSeries = await getUpComingSeries()
 
   //Top Rated
-  const topRatedMovies = await getTopRated()
-  const topRatedSeries = await getTopRatedSeries()
+  // const topRatedMovies = await getTopRated()
+  // const topRatedSeries = await getTopRatedSeries()
 
   //Popular
   const popularMovies = await getPopular()
@@ -26,7 +26,7 @@ export default async function Home() {
   const Trending = [...trendingSeries, ...trendingMovies]
   const Popular = [...popularMovies, ...popularSeries]
   const UpComing = [...upComingMovies, ...upComingSeries]
-  const TopRated = [...topRatedSeries, ...topRatedMovies]
+  // const TopRated = [...topRatedSeries, ...topRatedMovies]
   const NowPlaying = [...nowPlayingSeries, ...nowPlayingMovies]
   return (
     <>

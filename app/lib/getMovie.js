@@ -18,16 +18,16 @@ const FetchData = async (url, cacheTime) => {
 };
 
 
-// export const getNowPlaying = async () => {
-// 	const url = new URL(`https://api.themoviedb.org/3/movie/now_playing`);
-// 	const data = await FetchData(url);
-// 	return data.results;
-// }
-// export const getNowPlayingSeries = async () => {
-// 	const url = new URL(`https://api.themoviedb.org/3/tv/airing_today`);
-// 	const data = await FetchData(url);
-// 	return data.results;
-// }
+export const getNowPlaying = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/movie/now_playing`);
+	const data = await FetchData(url);
+	return data.results;
+}
+export const getNowPlayingSeries = async () => {
+	const url = new URL(`https://api.themoviedb.org/3/tv/airing_today`);
+	const data = await FetchData(url);
+	return data.results;
+}
 export const getUpComing = async () => {
 	const url = new URL(`https://api.themoviedb.org/3/movie/upcoming`);
 	const data = await FetchData(url);
