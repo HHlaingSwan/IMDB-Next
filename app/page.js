@@ -5,8 +5,8 @@ import { getNowPlaying, getNowPlayingSeries, getPopular, getPopularSeries, getTo
 
 export default async function Home() {
   // Now Playing
-  // const nowPlayingSeries = await getNowPlayingSeries()
-  // const nowPlayingMovies = await getNowPlaying()
+  const nowPlayingSeries = await getNowPlayingSeries()
+  const nowPlayingMovies = await getNowPlaying()
   //Up Coming
   const upComingMovies = await getUpComing()
   const upComingSeries = await getUpComingSeries()
@@ -27,7 +27,7 @@ export default async function Home() {
   const Popular = [...popularMovies, ...popularSeries]
   const UpComing = [...upComingMovies, ...upComingSeries]
   const TopRated = [...topRatedSeries, ...topRatedMovies]
-  // const NowPlaying = [...nowPlayingSeries, ...nowPlayingMovies]
+  const NowPlaying = [...nowPlayingSeries, ...nowPlayingMovies]
   return (
     <>
       <main>
@@ -35,8 +35,8 @@ export default async function Home() {
         <div className="flex flex-col space-y-10 ">
           <ListMovies Movies={Popular} Title={"Popular"} />
           <ListMovies Movies={UpComing} Title={"Up Coming"} />
-          {/* <ListMovies Movies={NowPlaying} Title={"Now Playing"} /> */}
-          <ListMovies Movies={TopRated} Title={"Top Rated"} />
+          <ListMovies Movies={NowPlaying} Title={"Now Playing"} />
+          {/* <ListMovies Movies={TopRated} Title={"Top Rated"} /> */}
         </div>
       </main>
     </>
