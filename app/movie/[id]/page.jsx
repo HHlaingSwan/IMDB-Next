@@ -41,18 +41,18 @@ const MoiveDatail = async ({ params: { id } }) => {
 							<h1 className='text-2xl font-bold'>
 								{datail.title || datail.name}
 							</h1>
-							<p className='text-base font-mono text-gray-300'>
+							<p className='text-base mt-3 font-mono text-gray-300'>
 								{datail.overview}
 							</p>
-							<p className='text-base font-serif'>
+							<p className='text-base mt-3  font-serif'>
 								Release_Date
 								<span className='text-gray-600'> : {datail.release_date}</span>
 							</p>
-							<p className='text-base font-serif'>
+							<p className='text-base mt-3 font-serif'>
 								Runtime{" "}
 								<span className='text-gray-600'> : {datail.runtime}</span>
 							</p>
-							<p className='text-base font-serif'>
+							<p className='text-base mt-3 font-serif'>
 								Status : {""}
 								<span
 									className={

@@ -12,7 +12,7 @@ const AboutSection = () => {
 				<p className='text-sm md:text-base text-gray-300/70'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
 					aliquid dolores natus fugit autem, blanditiis aliquam? Harum dicta
-					consequuntur eius.
+					consequuntur eius magnam ullam in vel illum totam ab, optio quos?
 				</p>
 			</div>
 		</>
