@@ -15,7 +15,7 @@ const Carosel = ({ trendingMovies }) => {
 				<div className='flex  '>
 					{trendingMovies.map((movie, index) => (
 						<div
-							className='flex-full min-h-[650px] md:min-h-[800px] lg:min-h-[850px] relative min-w-0 '
+							className='flex-full h-screen relative min-w-0 '
 							key={index}>
 							<Image
 								className='  size-full  object-cover object-center'
